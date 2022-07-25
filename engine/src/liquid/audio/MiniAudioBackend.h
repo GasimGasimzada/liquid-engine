@@ -1,6 +1,6 @@
 #pragma once
 
-#include "liquid/asset/AudioAsset.h"
+#include "liquid/audio/AudioAsset.h"
 
 namespace liquid {
 

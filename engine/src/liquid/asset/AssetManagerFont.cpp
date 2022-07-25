@@ -5,8 +5,7 @@
 #include <freetype/freetype.h>
 
 #include "liquid/text/MsdfAtlas.h"
-
-#include "FontAsset.h"
+#include "liquid/text/FontAsset.h"
 
 namespace liquid {
 

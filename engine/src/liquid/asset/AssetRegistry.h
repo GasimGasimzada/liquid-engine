@@ -3,18 +3,15 @@
 #include "Asset.h"
 #include "AssetMap.h"
 
-#include "MaterialAsset.h"
-#include "TextureAsset.h"
-#include "FontAsset.h"
-#include "MeshAsset.h"
-#include "SkeletonAsset.h"
-#include "AnimationAsset.h"
-#include "AudioAsset.h"
+#include "liquid/renderer/MaterialAsset.h"
+#include "liquid/renderer/TextureAsset.h"
+#include "liquid/text/FontAsset.h"
+#include "liquid/scene/MeshAsset.h"
+#include "liquid/animation/SkeletonAsset.h"
+#include "liquid/animation/AnimationAsset.h"
+#include "liquid/audio/AudioAsset.h"
+#include "liquid/scripting/LuaScriptAsset.h"
 #include "PrefabAsset.h"
-#include "LuaScriptAsset.h"
-
-#include "liquid/scene/Vertex.h"
-#include "liquid/scene/SkinnedVertex.h"
 
 #include "liquid/rhi/ResourceRegistry.h"
 

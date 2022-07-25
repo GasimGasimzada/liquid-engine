@@ -1,6 +1,6 @@
 #pragma once
 
-#include "liquid/asset/AnimationAsset.h"
+#include "liquid/animation/AnimationAsset.h"
 
 namespace liquid {
 

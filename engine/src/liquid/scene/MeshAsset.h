@@ -4,7 +4,7 @@
 #include "liquid/scene/SkinnedVertex.h"
 #include "liquid/rhi/RenderHandle.h"
 
-#include "Asset.h"
+#include "liquid/asset/Asset.h"
 
 namespace liquid {
 

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "liquid/rhi/ResourceRegistry.h"
-#include "liquid/asset/MeshAsset.h"
+#include "liquid/scene/MeshAsset.h"
 #include "liquid/entity/Entity.h"
 #include "liquid/renderer/Material.h"
 #include "liquid/entity/EntityDatabase.h"

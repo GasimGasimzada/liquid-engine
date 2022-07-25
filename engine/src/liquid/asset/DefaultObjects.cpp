@@ -1,7 +1,7 @@
 #include "liquid/core/Base.h"
 #include "AssetData.h"
-#include "MeshAsset.h"
-#include "MaterialAsset.h"
+#include "liquid/scene/MeshAsset.h"
+#include "liquid/renderer/MaterialAsset.h"
 #include "DefaultObjects.h"
 
 namespace liquid::default_objects {
