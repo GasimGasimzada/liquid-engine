@@ -49,7 +49,6 @@ AssetManager::createAnimationFromAsset(const AssetData<AnimationAsset> &asset) {
 Result<AnimationAssetHandle>
 AssetManager::loadAnimationDataFromInputStream(InputBinaryStream &stream,
                                                const Path &filePath) {
-
   AssetData<AnimationAsset> animation{};
   animation.path = filePath;
   animation.relativePath = std::filesystem::relative(filePath, mAssetsPath);

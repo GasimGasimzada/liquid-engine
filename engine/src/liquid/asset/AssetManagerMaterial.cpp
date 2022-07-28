@@ -11,6 +11,8 @@ namespace liquid {
 
 Result<Path>
 AssetManager::createMaterialFromAsset(const AssetData<MaterialAsset> &asset) {
+  return materials().createAssetFile(asset);
+
   String extension = ".lqmat";
 
   Path assetPath = (mAssetsPath / (asset.name + extension)).make_preferred();
@@ -67,6 +69,8 @@ AssetManager::createMaterialFromAsset(const AssetData<MaterialAsset> &asset) {
 Result<MaterialAssetHandle>
 AssetManager::loadMaterialDataFromInputStream(InputBinaryStream &stream,
                                               const Path &filePath) {
+
+  return materials().loadFromStream(stream, filePath);
 
   AssetData<MaterialAsset> material{};
   material.path = filePath;
@@ -163,6 +167,8 @@ AssetManager::loadMaterialDataFromInputStream(InputBinaryStream &stream,
 
 Result<MaterialAssetHandle>
 AssetManager::loadMaterialFromFile(const Path &filePath) {
+  return materials().loadFromPath(filePath);
+
   InputBinaryStream stream(filePath);
 
   if (!stream.good()) {

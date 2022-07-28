@@ -3,6 +3,12 @@
 #include "Result.h"
 #include "AssetRegistry.h"
 
+#include "AssetManagerGroup.h"
+
+#include "liquid/renderer/TextureAssetManagerGroup.h"
+#include "liquid/renderer/MaterialAssetManagerGroup.h"
+#include "liquid/audio/AudioAssetManagerGroup.h"
+
 namespace liquid {
 
 class InputBinaryStream;
@@ -21,6 +27,18 @@ public:
    * @param assetsPath Assets path
    */
   AssetManager(const Path &assetsPath);
+
+  TextureAssetManagerGroup textures() {
+    return TextureAssetManagerGroup(mRegistry, mAssetsPath);
+  }
+
+  MaterialAssetManagerGroup materials() {
+    return MaterialAssetManagerGroup(mRegistry, mAssetsPath);
+  }
+
+  AudioAssetManagerGroup audios() {
+    return AudioAssetManagerGroup(mRegistry, mAssetsPath);
+  }
 
   /**
    * @brief Create texture from asset
